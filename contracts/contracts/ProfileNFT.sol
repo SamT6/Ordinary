@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
 contract ProfileNFT is ERC721("ProfileNFT", "PRO"){
     uint tokenId;
-    mapping(address=>tokenMetaData[]) public ownershipRecord;
+    mapping(address => tokenMetaData[]) public ownershipRecord;
     
     struct tokenMetaData{
         uint tokenId;
@@ -13,7 +13,7 @@ contract ProfileNFT is ERC721("ProfileNFT", "PRO"){
         string cid;
     }
 
-    function mintToken(address recipient, string cid) public {        
+    function mintToken(address recipient, string memory cid) public {        
         _safeMint(recipient, tokenId);
         ownershipRecord[recipient].push(tokenMetaData(tokenId, block.timestamp, cid));
         tokenId = tokenId + 1;
