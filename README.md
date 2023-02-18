@@ -1,14 +1,16 @@
 ## Ordinary - Let's build better teams!
-<img src="./imgs/landing.png" width="500"/>  
+<img src="./imgs/landing.png" width="700"/>  
 
 
 ## User Story
 <img src="./imgs/user-story.png" width="500"/>  
 
 ## Smart Contracts
-* ProfileNFT.sol
-* Event.sol
-* EventFactory.sol
+* ProfileNFT.sol - user profile NFT  
+* Event.sol - specific event  
+* EventFactory.sol - event factory
+
+<img src="./imgs/contracts.png" width="500"/>  
 
 ## Run the project locally
 * frontend 
