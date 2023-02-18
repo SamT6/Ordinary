@@ -12,12 +12,19 @@
 
 <img src="./imgs/contracts.png" width="500"/>  
 
+## Technologies
+* React - frontend library
+* NFT.Storage - IPFS & Filecoin for NFT storage
+* Ethereum - smart contracts on blockchain 
+
+<img src="./imgs/tech.png" width="500"/>  
+
 ## Run the project locally
 * frontend 
     * `json-server --watch db.json`
     * `npm install` and `npm start`
 * contracts
-    * `npx hardhat compile`
+    * [deploy](https://hardhat.org/hardhat-runner/docs/guides/deploying) if needed
 
 ## Dependencies
 * JSON Server: https://github.com/typicode/json-server
