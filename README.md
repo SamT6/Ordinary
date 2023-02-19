@@ -1,6 +1,6 @@
 ## Ordinary - Let's build better teams!
 <img src="./imgs/landing.png" width="700"/>  
-
+<img src="./imgs/signup.png" width="700"/>  
 
 ## User Story
 <img src="./imgs/user-story.png" width="500"/>  

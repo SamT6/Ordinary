@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Landing from './pages/landing';
+import Home from './pages/home';
+import Signup from './pages/signup';
 
 const App = () => {
     const [ethAddress, setEthAddress] = useState("");
@@ -28,7 +30,16 @@ const App = () => {
                     path="/"
                     element={<Landing connect_wallet={connect_wallet} />}
                 />
-              
+                <Route
+                    exact
+                    path="/home"
+                    element={<Home />}
+                />
+                <Route
+                    exact
+                    path="/signup"
+                    element={<Signup />}
+                />
                 <Route path="*" element={<Landing connect_wallet={connect_wallet}/>} />
             </Routes>
         </Router>
